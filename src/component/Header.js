@@ -1,38 +1,35 @@
 import React, { Component } from 'react';
-
 import logo from '../images/world.png';
-import  '../css/App.css';
+import  '../css/Header.css';
 
 
 
 class Header extends Component {
   render() {
     return (
-
-      <div>
-         <nav id="header-nav" class="navbar navbar-default" >
-          <div class="container">
-            <div class="navbar-header" >
-              <a href="#" class="pull-left visible-md visible-lg">
+        <nav  className="navbar navbar-default" >
+          <div className="container">
+            <div className="navbar-header" >
+              <a href="#" className="pull-left visible-md visible-lg">
                 <div id="logo-img"></div>
               </a>
 
-              <div class="navbar-brand">
+              <div className="navbar-brand">
                  <a href="#"><h1>ELFAY TRAVEL AGENT</h1></a>
              
               </div>
 
-              <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+              <button id="navbarToggle" type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                <span className="sr-only">Toggle navigation</span>
+                <span className="icon-bar"></span>
+                <span className="icon-bar"></span>
+                <span className="icon-bar"></span>
               </button>
             </div>
             
-            <div id="collapsable-nav" class="collapse navbar-collapse">
-               <ul id="nav-list" class="nav navbar-nav navbar-right">
-                    <li id="navHomeButton" class=" active">
+            <div id="collapsable-nav" className="collapse navbar-collapse">
+               <ul id="nav-list" className="nav navbar-nav navbar-right">
+                    <li id="navHomeButton" className=" active">
                       <a href="index.html">
                         Home</a>
                     </li>
@@ -65,9 +62,11 @@ class Header extends Component {
       
 
 
-      </div>
+
     );
   }
 }
+
+
 
 export default Header;
